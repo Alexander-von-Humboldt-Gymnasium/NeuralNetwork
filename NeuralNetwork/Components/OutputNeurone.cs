@@ -30,10 +30,6 @@ namespace NeuralNetworkMG.NeuralNetwork.Components
             Value += value;
         }
 
-        public void Fire()
-        {
-            Console.WriteLine("Value = " + Value);
-            Console.WriteLine("Result = " + Get());
-        }
+        public void Fire() { }
     }
 }

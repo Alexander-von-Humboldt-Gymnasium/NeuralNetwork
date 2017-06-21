@@ -8,8 +8,8 @@ namespace NeuralNetworkMG.NeuralNetwork.Components
 {
     public class Layer
     {
-        public Layer NextLayer { get; private set; }
-        public Layer PreviousLayer { get; private set; }
+        public Layer NextLayer { get; set; }
+        public Layer PreviousLayer { get; set; }
 
         public INeurone Bias { get; private set; }
         public INeurone[] Neurones { get; private set; }

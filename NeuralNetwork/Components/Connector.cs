@@ -24,6 +24,11 @@ namespace NeuralNetworkMG.NeuralNetwork.Components
         {
             NeuroneB.Set(NeuroneA.Get() * Weight);
         }
+        
+        public void AdjustWeight(double delta)
+        {
+            Weight += delta;
+        }
 
 
     }

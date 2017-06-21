@@ -20,15 +20,16 @@ namespace NeuralNetworkMG
 
         private void MainFrm_Load(object sender, EventArgs e)
         {
-            int[] img = new int[800 *800];
-            AI ai = new AI(800, 800, "test");
-
-            ai.CreateHiddenLayer0(15);
-
+            double[] img = new double[2 * 2];
+            AI ai = new AI(2, 2, "test");
+            
+            ai.CreateHiddenLayer0(2);
             ai.AddTrainingMaterial(0, img);
-
             ai.MeshFully();
+
+
             ai.Train();
+            Console.WriteLine(ai.Test(img));
 
 
         }

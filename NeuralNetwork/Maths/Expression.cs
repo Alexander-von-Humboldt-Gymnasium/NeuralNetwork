@@ -23,6 +23,10 @@ namespace NeuralNetworkMG.NeuralNetwork.Maths
         {
             return x;
         };
+        public static Func<double, double> DerivativeI_Linear = (x) =>
+        {
+            return 1;
+        };
 
         public static Func<double, double> Step = (x) =>
         {
