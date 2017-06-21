@@ -17,7 +17,7 @@ namespace NeuralNetworkMG.NeuralNetwork
         public OutputNeurone OutputNeurone { get; private set; }
 
         public InputNeurone Bias0 { get; private set; }
-        public WorkingNeurone Bias1 { get; private set; }
+        public InputNeurone Bias1 { get; private set; }
 
         public List<int[]> TrainingSets { get; private set; }
         public string Description { get; set; }
@@ -50,7 +50,7 @@ namespace NeuralNetworkMG.NeuralNetwork
             Bias0 = new InputNeurone();
             Bias0.Set(1.0);
 
-            Bias1 = new WorkingNeurone();
+            Bias1 = new InputNeurone();
             Bias1.Set(1.0);
         }
 
